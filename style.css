@@ -29,8 +29,6 @@
   --font-title: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
 }
 
-body { font-family: var(--font-body); }
-
 h1, h2, h3, .brand h1 {
   font-family: var(--font-title);
   letter-spacing: 0.2px;
@@ -40,8 +38,8 @@ h1, h2, h3, .brand h1 {
 
 body{
   margin: 0;
-font-family: var(--font-body); 
- background: radial-gradient(1200px 600px at 20% 10%, rgba(185, 166, 255, 0.12), transparent 55%),
+  font-family: var(--font-body); 
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(185, 166, 255, 0.12), transparent 55%),
               radial-gradient(900px 500px at 80% 30%, rgba(255, 123, 191, 0.10), transparent 60%),
               linear-gradient(180deg, var(--bg), var(--bg-2));
   color: var(--text);
