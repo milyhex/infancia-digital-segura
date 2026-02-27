@@ -1,20 +1,52 @@
-:root{
-  --bg: #111122;
-  --card: #141427;
-  --text: #ffffff;
-  --muted: #b7b7c9;
-  --accent: #c7b8ff;
-  --border: rgba(255,255,255,0.08);
+:root {
+  /* Base “noche suave” */
+  --bg: #0b0b16;
+  --bg-2: #101026;
+
+  /* Superficies/cards */
+  --card: rgba(255, 255, 255, 0.06);
+  --card-2: rgba(255, 255, 255, 0.08);
+
+  /* Bordes/sombras */
+  --border: rgba(255, 255, 255, 0.10);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+
+  /* Texto */
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.70);
+
+  /* Acentos */
+  --lavender: #b9a6ff;
+  --pink: #ff7bbf;
+  --accent: var(--lavender);
+  --accent-2: var(--pink);
+
+  /* Glow */
+  --glow: 0 0 0 3px rgba(185, 166, 255, 0.18);
+
+  /* Fuentes */
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-title: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+}
+
+body { font-family: var(--font-body); }
+
+h1, h2, h3, .brand h1 {
+  font-family: var(--font-title);
+  letter-spacing: 0.2px;
 }
 
 *{ box-sizing: border-box; }
 
 body{
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--bg);
+font-family: var(--font-body); 
+ background: radial-gradient(1200px 600px at 20% 10%, rgba(185, 166, 255, 0.12), transparent 55%),
+              radial-gradient(900px 500px at 80% 30%, rgba(255, 123, 191, 0.10), transparent 60%),
+              linear-gradient(180deg, var(--bg), var(--bg-2));
   color: var(--text);
 }
+
 
 .container{
   width: min(980px, 92%);

@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.1.0] - 27/2/2026
+### Agregado
+-Grades cambios de estetica
+-Se agrega a Deva como mascota del Proyecto
+---
+
 ## [v1.0.2] - 27/2/2026
 ### Agregado
 -Se agrega posibilidad de compartir blog
