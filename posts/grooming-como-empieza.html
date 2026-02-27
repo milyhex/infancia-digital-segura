@@ -228,12 +228,49 @@
     </main>
 
     <footer class="container footer">
+      <div class="card share-box">
+        <h3 style="margin-top: 0">¿Te resultó útil esta guía?</h3>
+        <p>Si puede ayudar a otra familia, compartila.</p>
+
+        <div class="share-buttons">
+          <button onclick="shareArticle()">Compartir</button>
+          <button onclick="copyLink()">Copiar enlace</button>
+        </div>
+
+        <p id="copyMessage" class="muted small" style="display: none">
+          Enlace copiado al portapapeles.
+        </p>
+      </div>
       <p class="muted small">
         © <span id="year"></span> Infancia Digital Segura
       </p>
     </footer>
 
     <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script>
+      function shareArticle() {
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            url: window.location.href,
+          });
+        } else {
+          copyLink();
+        }
+      }
+
+      function copyLink() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          const msg = document.getElementById("copyMessage");
+          msg.style.display = "block";
+          setTimeout(() => {
+            msg.style.display = "none";
+          }, 2000);
+        });
+      }
+
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>

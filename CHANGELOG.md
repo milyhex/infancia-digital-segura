@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.0.2] - 27/2/2026
+### Agregado
+-Se agrega posibilidad de compartir blog
+-Arreglos visuales
+---
+
 ## [v1.0.1] - 27/2/2026
 ### Agregado
 - Estructura base de blogs
