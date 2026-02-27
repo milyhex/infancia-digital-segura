@@ -1,5 +1,5 @@
 :root{
-  --bg: #0f0f18;
+  --bg: #111122;
   --card: #141427;
   --text: #ffffff;
   --muted: #b7b7c9;
@@ -63,9 +63,10 @@ main{
 .card{
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 18px 18px;
-  margin: 14px 0;
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin: 22px 0;
+  line-height: 1.7;
 }
 
 .grid{
@@ -81,9 +82,12 @@ main{
 }
 
 .list{
-  margin: 10px 0 0;
-  padding-left: 18px;
-  color: var(--text);
+  margin: 14px 0 20px;
+  padding-left: 22px;
+}
+
+.list li{
+  margin-bottom: 8px;
 }
 
 .muted{ color: var(--muted); }
@@ -108,4 +112,20 @@ main{
   margin: 0 0 6px;
   color: var(--muted);
   font-weight: bold;
+}
+
+h2 {
+  margin-top: 32px;
+  font-size: 24px;
+  color: var(--accent);
+}
+
+h3 {
+  margin-top: 24px;
+  font-size: 18px;
+  color: #e4dcff;
+}
+
+main.container {
+  max-width: 760px;
 }
