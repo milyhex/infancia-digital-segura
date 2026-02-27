@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Infancia Digital Segura</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="container header">
+    <div class="brand">
+      <h1>Blog</h1>
+      <p class="subtitle">Guías breves, claras y accionables para familias.</p>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a class="active" href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Primeros artículos (próximamente)</h2>
+      <ul class="list">
+        <li>¿Qué es el grooming y cómo suele empezar?</li>
+        <li>Señales de alerta en juegos online</li>
+        <li>Cómo hablar del tema sin miedo (guía para padres)</li>
+        <li>Qué guardar como evidencia y qué NO hacer</li>
+      </ul>
+      <p class="muted small">Después convertimos esto en posts reales.</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted small">© <span id="year"></span> Infancia Digital Segura</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

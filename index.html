@@ -1,45 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Infancia Digital Segura</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Proyecto educativo con guías claras para ayudar a familias a prevenir riesgos digitales." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Infancia Digital Segura</h1>
-    <p class="subtitle">Un espacio educativo para proteger a niños y acompañar a familias en el mundo digital.</p>
+  <header class="container header">
+    <div class="brand">
+      <h1>Infancia Digital Segura</h1>
+      <p class="subtitle">Un espacio educativo para acompañar a familias y proteger a niños en el mundo digital.</p>
+    </div>
+
+    <nav class="nav">
+      <a class="active" href="index.html">Inicio</a>
+      <a href="blog.html">Blog</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>📘 Blog y Guías</h2>
-    <p>Artículos claros sobre grooming, señales de alerta y prevención digital.</p>
-  </section>
+  <main class="container">
+    <section class="card">
+      <h2>🎯 Propósito</h2>
+      <p>
+        Crear un espacio de confianza con información clara y accesible para prevenir riesgos digitales,
+        ayudar a detectar señales de alerta y acompañar conversaciones seguras entre adultos y niños.
+      </p>
+    </section>
 
-  <section>
-    <h2>🎯 Nuestro propósito</h2>
-    <p>
-      Crear un espacio de confianza con información accesible para prevenir riesgos digitales
-      y fomentar conversaciones seguras entre adultos y niños.
-    </p>
-  </section>
+    <section class="card">
+      <h2>¿Qué vas a encontrar acá?</h2>
+      <ul class="list">
+        <li>Guías sobre grooming y riesgos online</li>
+        <li>Señales de alerta (juegos, redes, chats)</li>
+        <li>Recursos prácticos para actuar y pedir ayuda</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>📩 Contacto</h2>
-    <p>
-      Si querés sugerir un tema o compartir recursos educativos, próximamente habilitaremos
-      un canal de contacto.
-    </p>
-  </section>
+    <section class="grid">
+      <a class="card linkcard" href="blog.html">
+        <h3>📘 Ir al Blog</h3>
+        <p>Artículos cortos y claros. Sin tecnicismos.</p>
+      </a>
 
-  <section>
-    <h2>🤝 Apoyar el proyecto</h2>
-    <p>
-      En el futuro incorporaremos una sección de apoyo voluntario para sostener el proyecto.
-    </p>
-  </section>
+      <div class="card">
+        <h3>🤝 Apoyar el proyecto</h3>
+        <p class="muted">Próximamente: sección de apoyo/donaciones para sostener el proyecto.</p>
+      </div>
 
+      <div class="card">
+        <h3>🧩 Recursos</h3>
+        <p class="muted">Próximamente: líneas de ayuda, recomendaciones y material descargable.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>
+      <p class="muted small">© <span id="year"></span> Infancia Digital Segura</p>
+      <p class="muted small">Proyecto educativo independiente. No reemplaza ayuda profesional.</p>
+    </div>
+
+<div class="footer-block">
+  <p class="footer-title">Contacto</p>
+
+  <p class="small">
+    📧 <a href="mailto:devasama98@gmail.com">
+      devasama98@gmail.com
+    </a>
+  </p>
+
+  <p class="small">
+    📷 
+    <a href="https://www.instagram.com/proyecto_deva/" 
+       target="_blank" 
+       rel="noopener noreferrer">
+       Instagram (@proyecto_deva)
+
+    </a>
+    ·
+    🧵 
+    <a href="https://www.threads.com/@proyecto_deva" 
+       target="_blank" 
+       rel="noopener noreferrer">
+       Threads (@proyecto_deva)
+    </a>
+    ·
+    𝕏 
+    <a href="https://https://x.com/proyecto_deva" 
+       target="_blank" 
+       rel="noopener noreferrer">
+       X (@proyecto_deva)
+    </a>
+  </p>
+</div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
