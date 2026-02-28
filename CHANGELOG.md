@@ -1,4 +1,9 @@
 # Changelog
+## [v1.3.0] - 28/2/2026
+### Agregado
+-Se agrega metricas
+---
+
 ## [v1.2.1] - 28/2/2026
 ### Agregado
 -Se agrega pagina secreta de Deva
