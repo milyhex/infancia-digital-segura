@@ -1,4 +1,9 @@
 # Changelog
+## [v1.3.1] - 28/2/2026
+### Agregado
+-Se crea mail nuevo
+---
+
 ## [v1.3.0] - 28/2/2026
 ### Agregado
 -Se agrega metricas
