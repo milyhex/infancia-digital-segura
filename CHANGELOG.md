@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.2.0] - 28/2/2026
+### Agregado
+-Se mejora Index
+-Se agrega a deva como mascota visual
+-Se mejora texto
+---
+
 ## [v1.1.0] - 27/2/2026
 ### Agregado
 -Grades cambios de estetica
