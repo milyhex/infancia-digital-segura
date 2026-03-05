@@ -1,4 +1,9 @@
 # Changelog
+## [v1.4.0] - 05/03/2026
+### Agregado
+-SEO
+-Verificacion de Google
+---
 
 ## [v1.3.2] - 05/03/2026
 ### Agregado
