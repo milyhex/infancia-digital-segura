@@ -1,4 +1,10 @@
 # Changelog
+
+## [v1.3.2] - 05/03/2026
+### Agregado
+-Blog nuevo
+---
+
 ## [v1.3.1] - 28/2/2026
 ### Agregado
 -Se crea mail nuevo
