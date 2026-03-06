@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://milyhex.github.io/infancia-digital-segura/index.html</loc>
-  </url>
-  <url>
-    <loc>https://milyhex.github.io/infancia-digital-segura/blog.html</loc>
-  </url>
-  <url>
-    <loc>https://milyhex.github.io/infancia-digital-segura/deva.html</loc>
-  </url>
 
-  <!-- posts -->
-  <url>
-    <loc>https://milyhex.github.io/infancia-digital-segura/posts/adultos-haciendose-pasar-por-ninos.html</loc>
-  </url>
-  <url>
-    <loc>https://milyhex.github.io/infancia-digital-segura/posts/grooming-como-empieza.html</loc>
-  </url>
-  <url>
-    <loc>https://milyhex.github.io/infancia-digital-segura/posts/senales-alerta-juegos-online.html</loc>
-  </url>
+<url>
+<loc>https://proyectodeva.com.ar/</loc>
+</url>
+
+<url>
+<loc>https://proyectodeva.com.ar/blog.html</loc>
+</url>
+
+<url>
+<loc>https://proyectodeva.com.ar/deva.html</loc>
+</url>
+
+<!-- posts -->
+
+<url>
+<loc>https://proyectodeva.com.ar/posts/adultos-haciendose-pasar-por-ninos.html</loc>
+</url>
+
+<url>
+<loc>https://proyectodeva.com.ar/posts/grooming-como-empieza.html</loc>
+</url>
+
+<url>
+<loc>https://proyectodeva.com.ar/posts/senales-alerta-juegos-online.html</loc>
+</url>
+
 </urlset>

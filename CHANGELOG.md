@@ -1,4 +1,9 @@
 # Changelog
+## [v1.5.0] - 05/03/2026
+### Agregado
+-SE AGREGA DOMINIO!!!
+---
+
 ## [v1.4.0] - 05/03/2026
 ### Agregado
 -SEO
