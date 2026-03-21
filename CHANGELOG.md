@@ -1,4 +1,10 @@
 # Changelog
+## [v1.6.0] - 21/03/2026
+### Agregado
+-Se agregas redes sociales
+-nuevo blog "como-hablar-sin-miedo.html"
+---
+
 ## [v1.5.0] - 05/03/2026
 ### Agregado
 -SE AGREGA DOMINIO!!!
