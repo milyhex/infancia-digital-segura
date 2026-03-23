@@ -340,3 +340,30 @@ main.container {
   box-shadow: 0 4px 12px rgba(181, 126, 220, 0.3);
   transition: all 0.2s ease;
 }
+
+/* Links normales */
+a {
+  color: #c9a6ff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 166, 255, 0.5);
+}
+
+/* Links visitados*/
+a:visited {
+  color: rgba(201, 166, 255, 0.7);
+}
+
+a:active {
+  border-bottom: 1px solid #f0d4ff; /* Indica que el link está siendo clickeado */
+}
+
+/* Hover (cuando se el mouse) */
+a:hover {
+  color: #f0d4ff; 
+  text-decoration: underline; /* indica que es clickeable */
+}
+
+.list a,
+.list a:visited {
+  color: #c9a6ff;
+}

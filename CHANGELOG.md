@@ -1,4 +1,9 @@
 # Changelog
+## [v1.6.2] - 23/03/2026
+### Agregado
+- Introduce CSS rules for links to improve visibility and UX: base link color and underline-border, visited color, active state border, hover color/underline, and ensure .list links inherit the intended color.
+---
+
 ## [v1.6.1] - 23/03/2026
 ### Agregado
 -Se mejora Mensaje de contacto y se añade boton de contacto en el inicio.
