@@ -1,4 +1,10 @@
 # Changelog
+
+## [v1.6.3] - 23/03/2026
+### Agregado
+- add a support card linking to Cafecito in index.html and Refactor and extend style.css: reorganize CSS variable comments, typography and resets; add/adjust layout rules (container, header, hero, grid, cards); introduce comprehensive link styles and .btn-mail button states; ensure clickable .linkcard and .deva-float behave correctly; minor responsive and visual tweaks.
+---
+
 ## [v1.6.2] - 23/03/2026
 ### Agregado
 - Introduce CSS rules for links to improve visibility and UX: base link color and underline-border, visited color, active state border, hover color/underline, and ensure .list links inherit the intended color.
