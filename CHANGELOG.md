@@ -1,4 +1,9 @@
 # Changelog
+## [v1.6.1] - 23/03/2026
+### Agregado
+-Se mejora Mensaje de contacto y se añade boton de contacto en el inicio.
+---
+
 ## [v1.6.0] - 21/03/2026
 ### Agregado
 -Se agregas redes sociales

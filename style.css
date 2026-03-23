@@ -323,3 +323,20 @@ main.container {
   height: auto;
   filter: drop-shadow(0 8px 18px rgba(0,0,0,.5));
 }
+
+.btn-mail {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+
+  background: linear-gradient(135deg, #e6c1ff, #b57edc); /* lavanda */
+  color: #1a1a2e;
+
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+
+  box-shadow: 0 4px 12px rgba(181, 126, 220, 0.3);
+  transition: all 0.2s ease;
+}
