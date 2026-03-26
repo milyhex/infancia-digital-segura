@@ -1,158 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-  <title>Shhh… | Deva</title>
+    <title>Shhh… | Deva</title>
 
-  <link rel="canonical" href="https://proyectodeva.com.ar/deva.html">
+    <link rel="canonical" href="https://proyectodeva.com.ar/deva.html" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <meta name="description" content="Página secreta: el rincón de Deva." />
-  <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Página secreta: el rincón de Deva." />
+    <link rel="stylesheet" href="style.css" />
 
-    <script defer src="https://cloud.umami.is/script.js"
-        data-website-id="581198da-6746-4ecf-85ae-445f8507fffd">
-    </script>
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="581198da-6746-4ecf-85ae-445f8507fffd"
+    ></script>
+  </head>
 
-</head>
+  <body>
+    <!-- Sticker flotante (clic → vuelve a esta página secreta) -->
+    <a
+      class="deva-float"
+      href="deva.html"
+      aria-label="Volver al rincón secreto de Deva"
+    >
+      <img src="assets/deva-sticker.png" alt="Deva, guardiana del proyecto" />
+    </a>
 
-<body>
+    <header class="container header secret-wrap">
+      <div class="brand">
+        <p class="secret-badge">Página secreta</p>
 
-  <!-- Sticker flotante (clic → vuelve a esta página secreta) -->
-  <a class="deva-float" href="deva.html" aria-label="Volver al rincón secreto de Deva">
-    <img src="assets/deva-sticker.png" alt="Deva, guardiana del proyecto">
-  </a>
+        <div class="secret-title">
+          <img src="assets/safe-deva.png" alt="Deva" class="title-deva" />
+          <h1>🗝️ El rincón de Deva</h1>
+        </div>
+        <p class="subtitle">Shhh… si llegaste acá, descubriste el escondite.</p>
 
-  <header class="container header secret-wrap">
-    <div class="brand">
-      <p class="secret-badge">Página secreta</p>
+        <p class="muted">Esta página no es seria. (Bueno… un poquito sí.)</p>
+      </div>
 
-<div class="secret-title">
-  <img src="assets/safe-deva.png" alt="Deva" class="title-deva">
-  <h1>🗝️ El rincón de Deva</h1>
-</div>
-      <p class="subtitle">Shhh… si llegaste acá, descubriste el escondite.</p>
+      <nav class="nav">
+        <a href="/">Inicio</a>
+        <a href="blog.html">Blog</a>
+        <a href="glosario.html" class="btn">Glosario</a>
+        <a class="active" href="deva.html">Deva</a>
+      </nav>
+    </header>
 
-      <p class="muted">
-        Esta página no es seria. (Bueno… un poquito sí.)
-      </p>
-    </div>
+    <main class="container">
+      <!-- Card 1: presentación graciosa -->
+      <section class="card playful">
+        <h2>👀 ¿Quién soy?</h2>
 
-    <nav class="nav">
-      <a href="/">Inicio</a>
-      <a href="blog.html">Blog</a>
-      <a class="active" href="deva.html">Deva</a>
-    </nav>
-  </header>
+        <div class="deva-row">
+          <img src="assets/deva-sticker2.png" alt="Deva chibi" />
+          <div>
+            <p>
+              Soy <strong>Deva</strong>. Guardiana del proyecto, protectora de
+              familias, y dueña oficial de los <strong>candados rosas</strong>.
+            </p>
 
-  <main class="container">
-
-    <!-- Card 1: presentación graciosa -->
-    <section class="card playful">
-      <h2>👀 ¿Quién soy?</h2>
-
-      <div class="deva-row">
-        <img src="assets/deva-sticker2.png" alt="Deva chibi">
-        <div>
-          <p>
-            Soy <strong>Deva</strong>. Guardiana del proyecto, protectora de familias,
-            y dueña oficial de los <strong>candados rosas</strong>.
-          </p>
-
-          <div class="note">
-            No soy hacker. No soy policía. No soy algoritmo misterioso.
-            <br><strong>Soy una amiga</strong>.
+            <div class="note">
+              No soy hacker. No soy policía. No soy algoritmo misterioso.
+              <br /><strong>Soy una amiga</strong>.
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Card 2: cosas que le gustan / no le gustan -->
-    <section class="secret-grid">
-
-      <section class="card playful">
-        <h2>🧃 Cosas que SÍ me gustan</h2>
-        <span class="smallchip">✅ guías claras</span>
-        <span class="smallchip">✅ adultos que preguntan</span>
-        <span class="smallchip">✅ hablar sin vergüenza</span>
-        <span class="smallchip">✅ límites sanos</span>
-        <span class="smallchip">✅ “¿estás bien?”</span>
-
-        <p class="muted" style="margin-top:12px;">
-          Bonus: cuando alguien dice “no sé del tema, pero quiero aprender”.
-        </p>
       </section>
 
-      <section class="card playful">
-        <h2>🚫 Cosas que NO me gustan</h2>
-        <span class="smallchip">❌ “seguro no es nada”</span>
-        <span class="smallchip">❌ “después vemos”</span>
-        <span class="smallchip">❌ silencio</span>
-        <span class="smallchip">❌ culpar a la víctima</span>
-        <span class="smallchip">❌ minimizar</span>
+      <!-- Card 2: cosas que le gustan / no le gustan -->
+      <section class="secret-grid">
+        <section class="card playful">
+          <h2>🧃 Cosas que SÍ me gustan</h2>
+          <span class="smallchip">✅ guías claras</span>
+          <span class="smallchip">✅ adultos que preguntan</span>
+          <span class="smallchip">✅ hablar sin vergüenza</span>
+          <span class="smallchip">✅ límites sanos</span>
+          <span class="smallchip">✅ “¿estás bien?”</span>
 
-        <p class="muted" style="margin-top:12px;">
-          Si algo se siente raro… se habla. Y listo 👍
-        </p>
+          <p class="muted" style="margin-top: 12px">
+            Bonus: cuando alguien dice “no sé del tema, pero quiero aprender”.
+          </p>
+        </section>
+
+        <section class="card playful">
+          <h2>🚫 Cosas que NO me gustan</h2>
+          <span class="smallchip">❌ “seguro no es nada”</span>
+          <span class="smallchip">❌ “después vemos”</span>
+          <span class="smallchip">❌ silencio</span>
+          <span class="smallchip">❌ culpar a la víctima</span>
+          <span class="smallchip">❌ minimizar</span>
+
+          <p class="muted" style="margin-top: 12px">
+            Si algo se siente raro… se habla. Y listo 👍
+          </p>
+        </section>
       </section>
 
-    </section>
+      <!-- Card 3: mini mensaje -->
+      <section class="card playful">
+        <h2>💌 Mensaje secretito</h2>
+        <p>
+          Internet puede ser muy divertido y lleno de buenos amigos y donde hay
+          muchas aventuras... pero también puede ser confuso.
+          <strong>Por eso estoy aca.</strong>
+          La prevención no es paranoia:
+          <strong>es cuidado</strong>.
+        </p>
+        <p class="muted">No se trata de controlar. Se trata de acompañar.</p>
 
-    <!-- Card 3: mini mensaje -->
-    <section class="card playful">
-      <h2>💌 Mensaje secretito </h2>
-      <p>
-        Internet puede ser muy divertido y lleno de buenos amigos y donde hay muchas aventuras... pero también puede ser confuso.
-        <strong>Por eso estoy aca.</strong>
-        La prevención no es paranoia:
-        <strong>es cuidado</strong>.
-      </p>
-      <p class="muted">
-        No se trata de controlar. Se trata de acompañar.
-      </p>
+        <div class="note">
+          Si querés empezar por un lugar simple: entrá al blog y elegí un
+          artículo cortito. Prometo no hablar en “manual técnico”.
+        </div>
+      </section>
 
-      <div class="note">
-        Si querés empezar por un lugar simple: entrá al blog y elegí un artículo cortito.
-        Prometo no hablar en “manual técnico”.
+      <!-- CTAs -->
+      <section class="grid">
+        <a class="card linkcard" href="blog.html">
+          <h3>📘 Ir al Blog</h3>
+          <p>Empezá con una guía cortita.</p>
+        </a>
+
+        <a class="card linkcard" href="/">
+          <h3>🏠 Volver al inicio</h3>
+          <p>La portada del proyecto.</p>
+        </a>
+
+        <a class="card linkcard" href="mailto:contacto.proyectodeva@gmail.com">
+          <h3>📩 Hablemos</h3>
+          <p>
+            ¿Tenés dudas, querés compartir tu experiencia o sugerir un tema?
+            Estoy para escucharte.
+          </p>
+        </a>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <div>
+        <p class="muted small">
+          © <span id="year"></span> Infancia Digital Segura
+        </p>
+        <p class="muted small">
+          Proyecto educativo independiente. No reemplaza ayuda profesional.
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <!-- CTAs -->
-    <section class="grid">
-      <a class="card linkcard" href="blog.html">
-        <h3>📘 Ir al Blog</h3>
-        <p>Empezá con una guía cortita.</p>
-      </a>
-
-      <a class="card linkcard" href="/">
-        <h3>🏠 Volver al inicio</h3>
-        <p>La portada del proyecto.</p>
-      </a>
-
-      <a class="card linkcard" href="mailto:contacto.proyectodeva@gmail.com">
-        <h3>📩 Hablemos</h3>
-        <p>¿Tenés dudas, querés compartir tu experiencia o sugerir un tema? Estoy para escucharte.</p>
-      </a>
-    </section>
-
-  </main>
-
-  <footer class="container footer">
-    <div>
-      <p class="muted small">© <span id="year"></span> Infancia Digital Segura</p>
-      <p class="muted small">Proyecto educativo independiente. No reemplaza ayuda profesional.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

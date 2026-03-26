@@ -438,3 +438,90 @@ a:hover {
 .btn-mail:active {
   transform: translateY(0);
 }
+
+/* Glosario */
+
+.glossary-search {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(201, 170, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+
+.glossary-search::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.glossary-search:focus {
+  border-color: rgba(201, 170, 255, 0.4);
+  box-shadow: 0 0 0 3px rgba(201, 170, 255, 0.08);
+}
+
+.glossary-empty {
+  margin-top: 0.8rem;
+}
+
+.glossary-list {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.glossary-item {
+  border: 1px solid rgba(201, 170, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  overflow: hidden;
+}
+
+.glossary-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 1.2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.glossary-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.glossary-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.glossary-item[open] summary::after {
+  content: "–";
+}
+
+.glossary-item p {
+  padding: 0 1.2rem 1rem;
+  margin: 0;
+}
+
+.glossary-intro {
+  margin: 0.5rem 0 1rem;
+  max-width: 760px;
+}
+.glossary-letter {
+  margin: 1.6rem 0 0.6rem;
+  font-family: "Fraunces", serif;
+  font-size: 1.2rem;
+  color: #ffb9ea;
+  opacity: 0.95;
+  letter-spacing: 0.05em;
+}
+.glossary-item:hover {
+  border-color: rgba(201, 170, 255, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+}
