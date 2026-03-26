@@ -1,4 +1,8 @@
 # Changelog
+## [v1.6.4] - 26/03/2026
+### Agregado
+- add new blog "guia-tiktok-para-familias.html"
+---
 
 ## [v1.6.3] - 23/03/2026
 ### Agregado
