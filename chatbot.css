@@ -71,7 +71,7 @@
   flex-direction: column;
   gap: 10px;
   overflow-y: auto;
-  max-height: 320px
+  max-height: 320px;
 }
 
 .user-msg {
@@ -110,7 +110,6 @@
   line-height: 1.2;
   transition: 0.2s ease;
 }
-
 
 .chat-options button:hover {
   background: rgba(165, 124, 255, 0.18);
@@ -208,4 +207,22 @@
 
 .chat-article-link:hover {
   background: rgba(165, 124, 255, 0.18);
+}
+
+.chat-mail-link {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 6px;
+  color: #dcbcff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(214, 170, 255, 0.18);
+}
+
+.chat-mail-link:hover {
+  text-decoration: underline;
+  background: rgba(165, 124, 255, 0.14);
 }

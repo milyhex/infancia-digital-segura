@@ -313,6 +313,52 @@ const intents = [
       url: "blog.html",
     },
   },
+  //Mundano
+  {
+    name: "saludo",
+    keywords: [
+      "hola",
+      "buenas",
+      "buen dia",
+      "buenas tardes",
+      "buenas noches",
+      "hey",
+      "ola",
+    ],
+    response:
+      "Hola 💜 Soy Deva. Estoy para ayudarte con dudas sobre niños e internet. ¿Qué te preocupa?",
+  },
+
+  {
+    name: "como_estas",
+    keywords: ["como estas", "todo bien", "como va"],
+    response:
+      "Estoy Super! acá para ayudarte siempre 💜 ¿Querés contarme qué te preocupa o qué estás buscando?",
+  },
+
+  {
+    name: "agradecimiento",
+    keywords: ["gracias", "muchas gracias", "graciass"],
+    response: "💜 Gracias a vos por confiar.",
+  },
+
+  {
+    name: "despedida",
+    keywords: ["chau", "adios", "nos vemos", "bye"],
+    response: "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar ",
+  },
+  {
+    name: "proyecto",
+    keywords: [
+      "que es deva",
+      "que es proyecto deva",
+      "de que se trata",
+      "que haces",
+      "para que sirve",
+    ],
+    response:
+      "Proyecto Deva busca ayudar a familias a acompañar a niños y adolescentes en internet 💜 con información clara, sin miedo y con herramientas reales.",
+  },
 ];
 
 const flows = {
@@ -471,7 +517,7 @@ window.sendMessage = function () {
     response = intent.response;
   } else {
     response =
-      "No estoy segura de eso todavía 💜 pero puedo ayudarte con riesgos, señales o cómo hablar del tema.";
+      "Perdón 💜 creo que no entendí bien. ¿Podés explicármelo de otra forma? O si preferís, podés escribirme por mail.";
   }
 
   const botMsg = document.createElement("div");
@@ -487,7 +533,20 @@ window.sendMessage = function () {
     articleLink.className = "chat-article-link";
     articleLink.href = intent.article.url;
     articleLink.innerText = intent.article.label;
+    articleLink.target = "_blank";
+    articleLink.rel = "noopener noreferrer";
     botMsg.appendChild(articleLink);
+  }
+
+  // 👉 fallback mail
+  if (!intent) {
+    const mailLink = document.createElement("a");
+    mailLink.className = "chat-mail-link";
+    mailLink.href = "mailto:contacto.proyectodeva@gmail.com";
+    mailLink.innerText = "Enviar por mail";
+
+    botText.appendChild(document.createElement("br"));
+    botText.appendChild(mailLink);
   }
 
   chat.appendChild(botMsg);
