@@ -349,7 +349,7 @@ const intents = [
   },
   {
     name: "Deva",
-    keywords: ["que es deva", "quien es deva", "quien sos", "que sos"],
+    keywords: ["que es deva", "quien es deva", "quien sos", "que sos", "deva"],
     response:
       "Soy Deva 💜 una amiga, una guía… y la que da la cara por todo el proyecto 😉",
   },
