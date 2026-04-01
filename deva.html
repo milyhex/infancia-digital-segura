@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-    <title>Shhh… | Deva</title>
+    <title>Deva</title>
 
     <link rel="canonical" href="https://proyectodeva.com.ar/deva.html" />
 
@@ -16,8 +16,12 @@
       rel="stylesheet"
     />
 
-    <meta name="description" content="Página secreta: el rincón de Deva." />
+    <meta
+      name="description"
+      content="Conocé a Deva, la guía del proyecto: un espacio cercano para entender y acompañar la infancia digital."
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css" />
 
     <script
       defer
@@ -27,33 +31,28 @@
   </head>
 
   <body>
-    <!-- Sticker flotante (clic → vuelve a esta página secreta) -->
-    <a
-      class="deva-float"
-      href="deva.html"
-      aria-label="Volver al rincón secreto de Deva"
-    >
+    <a class="deva-float" href="#" onclick="openChatFromFloat(event)">
       <img src="assets/deva-sticker.png" alt="Deva, guardiana del proyecto" />
     </a>
 
     <header class="container header secret-wrap">
       <div class="brand">
-        <p class="secret-badge">Página secreta</p>
+        <p class="secret-badge">Página de Deva</p>
 
         <div class="secret-title">
           <img src="assets/safe-deva.png" alt="Deva" class="title-deva" />
           <h1>🗝️ El rincón de Deva</h1>
         </div>
-        <p class="subtitle">Shhh… si llegaste acá, descubriste el escondite.</p>
-
+        <p class="subtitle">
+          Un espacio más cercano para entender y acompañar mejor.
+        </p>
         <p class="muted">Esta página no es seria. (Bueno… un poquito sí.)</p>
       </div>
 
       <nav class="nav">
-        <a href="/">Inicio</a>
+        <a class="active" href="/">Inicio</a>
         <a href="blog.html">Blog</a>
         <a href="glosario.html" class="btn">Glosario</a>
-        <a class="active" href="deva.html">Deva</a>
       </nav>
     </header>
 
@@ -123,6 +122,10 @@
           Si querés empezar por un lugar simple: entrá al blog y elegí un
           artículo cortito. Prometo no hablar en “manual técnico”.
         </div>
+
+        <button class="btn-mail" onclick="openChatFromFloat(event)">
+          💜 Hablar con Deva
+        </button>
       </section>
 
       <!-- CTAs -->
@@ -156,10 +159,65 @@
           Proyecto educativo independiente. No reemplaza ayuda profesional.
         </p>
       </div>
+
+      <div class="footer-block">
+        <p class="footer-title">Contacto</p>
+
+        <p class="small">
+          📧
+          <a href="mailto:contacto.proyectodeva@gmail.com"
+            >contacto.proyectodeva@gmail.com</a
+          >
+        </p>
+
+        <p class="small">
+          📷
+          <a
+            href="https://www.instagram.com/proyecto_deva/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram (@proyecto_deva)
+          </a>
+          · 🧵
+          <a
+            href="https://www.threads.com/@proyecto_deva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Threads (@proyecto_deva)
+          </a>
+          · 𝕏
+          <a
+            href="https://x.com/proyecto_deva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X (@proyecto_deva)
+          </a>
+          · 📘
+          <a
+            href="https://www.facebook.com/ProyectoDeva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook (Deva Elaine)
+          </a>
+
+          <!--
+          ·
+          🎵
+          <a href="https://www.tiktok.com/@proyecto_deva" target="_blank" rel="noopener noreferrer">
+          TikTok (@proyecto_deva)
+          </a> -->
+        </p>
+      </div>
     </footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+    <script src="chatbot.js"></script>
   </body>
 </html>

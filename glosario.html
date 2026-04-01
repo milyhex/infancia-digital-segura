@@ -43,6 +43,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css" />
 
     <script
       defer
@@ -52,7 +53,7 @@
   </head>
 
   <body>
-    <a class="deva-float" href="deva.html" aria-label="Conocer a Deva">
+    <a class="deva-float" href="#" onclick="openChatFromFloat(event)">
       <img src="assets/deva-sticker.png" alt="Deva, guardiana del proyecto" />
     </a>
 
@@ -65,14 +66,13 @@
       </div>
 
       <nav class="nav">
-        <a href="/">Inicio</a>
+        <a class="active" href="/">Inicio</a>
         <a href="blog.html">Blog</a>
-        <a class="active" href="glosario.html">Glosario</a>
+        <a href="deva.html" class="btn">Deva</a>
       </nav>
     </header>
 
     <main class="container">
-      
       <section class="card">
         <h2>Buscar término</h2>
         <p class="glossary-intro">
@@ -377,11 +377,70 @@
           <div class="glossary-letter">Z</div>
         </div>
       </section>
+    </main>
 
     <footer class="container footer">
-      <p class="muted small">
-        © <span id="year"></span> Infancia Digital Segura
-      </p>
+      <div>
+        <p class="muted small">
+          © <span id="year"></span> Infancia Digital Segura
+        </p>
+        <p class="muted small">
+          Proyecto educativo independiente. No reemplaza ayuda profesional.
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <p class="footer-title">Contacto</p>
+
+        <p class="small">
+          📧
+          <a href="mailto:contacto.proyectodeva@gmail.com"
+            >contacto.proyectodeva@gmail.com</a
+          >
+        </p>
+
+        <p class="small">
+          📷
+          <a
+            href="https://www.instagram.com/proyecto_deva/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram (@proyecto_deva)
+          </a>
+          · 🧵
+          <a
+            href="https://www.threads.com/@proyecto_deva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Threads (@proyecto_deva)
+          </a>
+          · 𝕏
+          <a
+            href="https://x.com/proyecto_deva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X (@proyecto_deva)
+          </a>
+          · 📘
+          <a
+            href="https://www.facebook.com/ProyectoDeva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook (Deva Elaine)
+          </a>
+
+          <!--
+          ·
+          🎵
+          <a href="https://www.tiktok.com/@proyecto_deva" target="_blank" rel="noopener noreferrer">
+          TikTok (@proyecto_deva)
+          </a> -->
+        </p>
+      </div>
     </footer>
 
     <script>
@@ -434,5 +493,7 @@
         emptyMessage.hidden = visibleCount !== 0;
       });
     </script>
+
+    <script src="chatbot.js"></script>
   </body>
 </html>

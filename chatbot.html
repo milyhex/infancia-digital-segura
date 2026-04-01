@@ -1,0 +1,20 @@
+<div id="floatingChat" class="floating-chat hidden">
+  <div class="chat-header">
+    Deva 💜
+    <button onclick="closeChat()" aria-label="Cerrar chat">✖</button>
+  </div>
+
+  <div class="chat-body" id="chatMessages"></div>
+
+  <div class="chat-input">
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Escribí tu duda..."
+      onkeydown="if (event.key === 'Enter') sendMessage();"
+    />
+    <button type="button" onclick="sendMessage()">➤</button>
+  </div>
+
+  <div class="chat-options"></div>
+</div>
