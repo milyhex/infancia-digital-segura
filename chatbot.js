@@ -43,7 +43,7 @@ const intents = [
       "adolecentes",
     ],
     response:
-      "Podés empezar con preguntas simples y sin juzgar. Por ejemplo: '¿alguna vez alguien te habló y te hizo sentir incómodo?' o 'si alguien te pide guardar un secreto, ¿sabés que podés contármelo?'. Lo importante es generar confianza 💜",
+      "Hablar del tema no es tener “la charla incómoda” de una vez, sino abrir un espacio. Podés empezar simple: preguntar, escuchar y mostrar que puede confiar en vos sin miedo a retarlo. Eso es lo que más los protege 💜",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -72,7 +72,7 @@ const intents = [
       "pedofilia",
     ],
     response:
-      "El grooming suele empezar con alguien que parece amable. Puede escuchar, jugar o generar confianza poco a poco, y después pedir secretos o llevar la conversación a algo incómodo.",
+      "El grooming casi nunca empieza de forma obvia. Suele ser alguien que primero se gana su confianza: juega, escucha, acompaña… y recién después empieza a cruzar límites. Por eso es tan difícil de detectar.",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -99,7 +99,7 @@ const intents = [
       "vea cosas",
     ],
     response:
-      "El contenido inapropiado puede aparecer sin buscarlo. Es importante acompañar, hablar de lo que ven y usar configuraciones de seguridad cuando haga falta.",
+      "Muchas veces el contenido inapropiado aparece sin que lo busquen. Más que controlar todo, es importante acompañar, hablar de lo que ven y usar configuraciones de seguridad cuando haga falta.",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -126,7 +126,7 @@ const intents = [
       "comportamiento",
     ],
     response:
-      "Algunas señales de alerta son: cambios de humor, aislamiento, secretos, miedo al usar el celular o esconder conversaciones.",
+      "Algunas señales no son tan evidentes: cambios de humor, aislarse, esconder el celular o ponerse nervioso cuando alguien se acerca. No siempre significa algo grave, pero sí que algo está pasando.",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -153,7 +153,7 @@ const intents = [
       "seguridad",
     ],
     response:
-      "Podés usar controles parentales, filtros, cuentas privadas y límites de uso.",
+      "Las herramientas ayudan, pero no hacen todo. Los controles parentales, filtros y cuentas privadas sirven como base… pero lo más importante sigue siendo el vínculo y la confianza.",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -179,7 +179,7 @@ const intents = [
       "no suelta el celular",
     ],
     response:
-      "El exceso de pantalla también preocupa mucho. Más que prohibir de golpe, suele ayudar poner rutinas claras, límites sostenibles y acompañar el uso.",
+      "El problema no es solo cuánto usan las pantallas, sino cómo las usan. Más que prohibir, suele funcionar mejor acompañar, poner límites claros, entender qué y porque buscan y acompañar en el uso.",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -197,9 +197,18 @@ const intents = [
       "compra",
       "compras",
       "tarjeta",
+      "engano",
+      "enganos",
+      "datos",
+      "datos personales",
+      "link raro",
+      "mensaje raro",
+      "cuenta hackeada",
+      "hackeo",
+      "hackearon",
     ],
     response:
-      "Las estafas y engaños también son un riesgo. Conviene enseñar a no compartir datos, no tocar links raros y consultar a un adulto antes de comprar o registrarse.",
+      "Las estafas hoy están en todos lados y muchas parecen inofensivas. Por eso es clave enseñar a desconfiar un poco: no compartir datos, no apurarse y siempre consultar antes de hacer clic con alguien de confianza.",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -221,31 +230,7 @@ const intents = [
       "la molestan",
     ],
     response:
-      "El ciberbullying puede aparecer como burlas, humillaciones, exclusión o amenazas. Es importante mirar cambios de ánimo y sostener un espacio de confianza.",
-    article: {
-      label: "Si queres saber mas: Ver guía para familias",
-      url: "blog.html",
-    },
-  },
-  {
-    name: "estafas",
-    keywords: [
-      "estafa",
-      "estafas",
-      "engano",
-      "enganos",
-      "phishing",
-      "robar",
-      "datos",
-      "datos personales",
-      "link raro",
-      "mensaje raro",
-      "cuenta hackeada",
-      "hackeo",
-      "hackearon",
-    ],
-    response:
-      "Las estafas y engaños también son un riesgo. Conviene enseñar a no compartir datos, no abrir links dudosos y consultar a un adulto antes de hacer clic o registrarse.",
+      "El ciberbullying no siempre se ve. A veces son bromas constantes, exclusión o comentarios que parecen “chiquitos” pero afectan mucho. Lo más importante es que no lo enfrenten solos.",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -267,7 +252,7 @@ const intents = [
       "discord",
     ],
     response:
-      "En juegos online puede haber contacto con desconocidos, chats incómodos o pedidos raros. Vale la pena revisar configuraciones, listas de amigos y cómo se comunican.",
+      "Los juegos online no son peligrosos en sí, pero sí lo que puede pasar dentro: chats con desconocidos, pedidos raros o confianza rápida. Vale la pena revisar configuraciones, listas de amigos y cómo se comunican.",
     article: {
       label: "Si queres saber mas: Ver guía para familias",
       url: "blog.html",
@@ -307,9 +292,10 @@ const intents = [
       "me siento perdido",
     ],
     response:
-      "Es normal no saber por dónde empezar 💜 Podemos ir paso a paso: riesgos más comunes, señales de alerta o cómo hablar del tema.",
+      "Es re normal sentirse así, hay mucha info y todo parece urgente. Si querés, vamos paso a paso según lo que más te preocupe, escribime que te preocupa, sino  💜",
     article: {
-      label: "Si queres saber mas: Ver guía para familias",
+      label:
+        "Si queres leer algo en particular: te dejo las guías para familias",
       url: "blog.html",
     },
   },
@@ -326,7 +312,7 @@ const intents = [
       "ola",
     ],
     response:
-      "Hola 💜 Soy Deva. Estoy para ayudarte con dudas sobre niños e internet. ¿Qué te preocupa?",
+      "Hola 💜 Soy Deva. Contame, ¿qué te está preocupando o qué te gustaría entender mejor?",
   },
 
   {
@@ -339,25 +325,33 @@ const intents = [
   {
     name: "agradecimiento",
     keywords: ["gracias", "muchas gracias", "graciass"],
-    response: "💜 Gracias a vos por confiar.",
+    response: "💜 Gracias a vos por confiar en preguntar, no es poca cosa.",
   },
 
   {
     name: "despedida",
     keywords: ["chau", "adios", "nos vemos", "bye"],
-    response: "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar ",
+    response: "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar, No hace falta tener todo resuelto hoy. ",
   },
   {
     name: "proyecto",
     keywords: [
-      "que es deva",
+      "proyecto deva",
+      "proyecto",
       "que es proyecto deva",
       "de que se trata",
       "que haces",
       "para que sirve",
+      "que es esto",
     ],
     response:
-      "Proyecto Deva busca ayudar a familias a acompañar a niños y adolescentes en internet 💜 con información clara, sin miedo y con herramientas reales.",
+      "Proyecto Deva busca acompañar a familias en todo lo que pasa con chicos en internet: sin miedo, sin tecnicismos y con herramientas reales 💜",
+  },
+  {
+    name: "Deva",
+    keywords: ["que es deva", "quien es deva", "quien sos", "que sos"],
+    response:
+      "Soy Deva 💜 una amiga, una guía… y la que da la cara por todo el proyecto 😉",
   },
 ];
 
