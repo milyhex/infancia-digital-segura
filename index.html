@@ -1,185 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-  <title>Infancia Digital Segura — Proyecto Deva</title>
+    <title>Infancia Digital Segura — Proyecto Deva</title>
 
-  <link rel="canonical" href="https://proyectodeva.com.ar/">
+    <link rel="canonical" href="https://proyectodeva.com.ar/" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <meta property="og:title" content="Infancia Digital Segura">
-  <meta property="og:description" content="Guías claras para familias: señales de alerta, prevención y acompañamiento.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://proyectodeva.com.ar/">
-  <meta property="og:image" content="https://proyectodeva.com.ar/assets/og.png">
+    <meta property="og:title" content="Infancia Digital Segura" />
+    <meta
+      property="og:description"
+      content="Guías claras para familias: señales de alerta, prevención y acompañamiento."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://proyectodeva.com.ar/" />
+    <meta
+      property="og:image"
+      content="https://proyectodeva.com.ar/assets/og.png"
+    />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://proyectodeva.com.ar/assets/og.png">
-  <meta name="twitter:title" content="Infancia Digital Segura">
-  <meta name="twitter:description" content="Guías claras para familias: señales de alerta, prevención y acompañamiento.">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://proyectodeva.com.ar/assets/og.png"
+    />
+    <meta name="twitter:title" content="Infancia Digital Segura" />
+    <meta
+      name="twitter:description"
+      content="Guías claras para familias: señales de alerta, prevención y acompañamiento."
+    />
 
-  <meta name="description" content="Proyecto educativo con guías claras para ayudar a familias a prevenir riesgos digitales." />
-  <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Proyecto educativo con guías claras para ayudar a familias a prevenir riesgos digitales."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css" />
 
-  <script defer src="https://cloud.umami.is/script.js"
-        data-website-id="581198da-6746-4ecf-85ae-445f8507fffd">
-  </script>
-</head>
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="581198da-6746-4ecf-85ae-445f8507fffd"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <a
+      class="deva-float"
+      href="#"
+      onclick="openChatFromFloat(event)"
+      aria-label="Hablar con Deva"
+    >
+      <img src="assets/deva-sticker.png" alt="Deva, guardiana del proyecto" />
+    </a>
 
- <a class="deva-float" href="deva.html" aria-label="Conocer a Deva">
-  <img src="assets/deva-sticker.png" alt="Deva, guardiana del proyecto">
-</a>
+    <header class="container header">
+      <!-- HERO: Deva a la izquierda + texto a la derecha -->
+      <div class="brand hero-layout">
+        <div class="hero-image">
+          <img
+            src="assets/deva-hero.png"
+            alt="Deva presentando Infancia Digital Segura"
+          />
+        </div>
 
-  <header class="container header">
+        <div class="hero-text">
+          <p class="kicker">Proyecto Deva</p>
 
-    <!-- HERO: Deva a la izquierda + texto a la derecha -->
-    <div class="brand hero-layout">
+          <h1>Infancia Digital Segura</h1>
 
-      <div class="hero-image">
-        <img src="assets/deva-hero.png" alt="Deva presentando Infancia Digital Segura">
+          <p class="subtitle">
+            Protección online para niños y tranquilidad para padres.
+          </p>
+
+          <p class="muted">
+            Guías claras para familias: prevención, señales de alerta y
+            acompañamiento.
+          </p>
+        </div>
       </div>
 
-      <div class="hero-text">
-        <p class="kicker">Proyecto Deva</p>
+      <nav class="nav">
+        <a class="active" href="/">Inicio</a>
+        <a href="blog.html">Blog</a>
+        <a href="deva.html" class="btn">Deva</a>
+        <a href="glosario.html" class="btn">Glosario</a>
+      </nav>
+    </header>
 
-        <h1>Infancia Digital Segura</h1>
+    <main class="container">
+      <section class="card">
+        <h2>💜 ¿Por qué nace Proyecto Deva?</h2>
 
-        <p class="subtitle">Protección online para niños y tranquilidad para padres.</p>
+        <p>
+          Internet forma parte de la infancia actual. Es un espacio de
+          aprendizaje, juego y conexión… pero también puede ser un lugar donde
+          los riesgos no siempre avisan.
+        </p>
+
+        <p>
+          Muchas familias saben que existen peligros digitales, pero no siempre
+          saben cómo detectarlos, cómo hablar del tema o qué hacer si algo pasa.
+        </p>
+
+        <p>
+          Proyecto Deva nace como una respuesta a eso: un espacio con guías
+          claras, sin tecnicismos ni alarmismo, para prevenir, detectar señales
+          de alerta y actuar a tiempo.
+        </p>
 
         <p class="muted">
-          Guías claras para familias: prevención, señales de alerta y acompañamiento.
+          No se trata de controlar. Se trata de acompañar, proteger y dar
+          herramientas reales.
         </p>
-      </div>
+      </section>
 
-    </div>
+      <section class="card" id="chat-deva">
+        <h3>💬 Hablemos</h3>
 
-    <nav class="nav">
-      <a class="active" href="/">Inicio</a>
-      <a href="blog.html">Blog</a>
-      <a href="glosario.html" class="btn">Glosario</a>
-    </nav>
+        <p>
+          Si tenés dudas sobre juegos, redes o señales de alerta, podés hablar
+          con Deva. Te va a guiar con información clara y simple.
+        </p>
 
-  </header>
+        <button class="btn-mail" onclick="openChatFromFloat(event)">
+          💜Hablá con Deva
+        </button>
 
-  <main class="container">
+        <p>También podés escribirme por mail.</p>
 
-    <section class="card">
-      <h2>💜 ¿Por qué nace Proyecto Deva?</h2>
+        <a class="btn-mail" href="mailto:contacto.proyectodeva@gmail.com">
+          👉 Escribirme por mail
+        </a>
+      </section>
 
-      <p>
-        Internet forma parte de la infancia actual. Es un espacio de aprendizaje,
-        juego y conexión… pero también puede ser un lugar donde los riesgos no siempre avisan.
-      </p>
-
-      <p>
-        Muchas familias saben que existen peligros digitales, pero no siempre saben
-        cómo detectarlos, cómo hablar del tema o qué hacer si algo pasa.
-      </p>
-
-      <p>
-        Proyecto Deva nace como una respuesta a eso:
-        un espacio con guías claras, sin tecnicismos ni alarmismo,
-        para prevenir, detectar señales de alerta y actuar a tiempo.
-      </p>
-
-      <p class="muted">
-        No se trata de controlar. Se trata de acompañar, proteger y dar herramientas reales.
-      </p>
-
-    </section>
-      <div class="card">
-        <h3>💌 Hablemos</h3>
-         <p>
-            Si tenés dudas, querés compartir una experiencia, hacer una consulta o sugerir un tema,
-            podés escribirme por mail. Este espacio también se construye con lo que ustedes necesitan.
-            Te voy a leer.
-          </p>
-            <a class="btn-mail" href="mailto:contacto.proyectodeva@gmail.com"> 
-              👉 Click aquí para escribirme.
-            </a>
-      </div>
-    </section>
-
-    <section class="grid">
-      <a class="card linkcard" href="blog.html">
-        <h3>📘 Ir al Blog</h3>
-        <p>Artículos cortos y claros. Sin tecnicismos.</p>
-      </a>
+      <section class="grid">
+        <a class="card linkcard" href="blog.html">
+          <h3>📘 Ir al Blog</h3>
+          <p>Artículos cortos y claros. Sin tecnicismos.</p>
+        </a>
 
         <div class="card">
           <h3>🤝 Apoyar el proyecto</h3>
-            <p class="muted">
-              Si sentis que este espacio es de ayuda, podés apoyar Proyecto Deva con un cafecito
-              para que siga creciendo y creando recursos para familias.
-            </p>
-            <a class="btn-mail" href="https://cafecito.app/proyectodeva" target="_blank" rel="noopener noreferrer">
+          <p class="muted">
+            Si sentis que este espacio es de ayuda, podés apoyar Proyecto Deva
+            con un cafecito para que siga creciendo y creando recursos para
+            familias.
+          </p>
+          <a
+            class="btn-mail"
+            href="https://cafecito.app/proyectodeva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             ☕ Ir a Cafecito
-            </a>
-          </div>
+          </a>
+        </div>
 
-      <div class="card">
-        <h3>🧩 Recursos</h3>
-        <p class="muted">Próximamente: líneas de ayuda, recomendaciones y material descargable.</p>
+        <div class="card">
+          <h3>🧩 Recursos</h3>
+          <p class="muted">
+            Próximamente: líneas de ayuda, recomendaciones y material
+            descargable.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <div>
+        <p class="muted small">
+          © <span id="year"></span> Infancia Digital Segura
+        </p>
+        <p class="muted small">
+          Proyecto educativo independiente. No reemplaza ayuda profesional.
+        </p>
       </div>
-    </section>
 
-  </main>
+      <div class="footer-block">
+        <p class="footer-title">Contacto</p>
 
-  <footer class="container footer">
-    <div>
-      <p class="muted small">© <span id="year"></span> Infancia Digital Segura</p>
-      <p class="muted small">Proyecto educativo independiente. No reemplaza ayuda profesional.</p>
-    </div>
+        <p class="small">
+          📧
+          <a href="mailto:contacto.proyectodeva@gmail.com"
+            >contacto.proyectodeva@gmail.com</a
+          >
+        </p>
 
-    <div class="footer-block">
-      <p class="footer-title">Contacto</p>
+        <p class="small">
+          📷
+          <a
+            href="https://www.instagram.com/proyecto_deva/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram (@proyecto_deva)
+          </a>
+          · 🧵
+          <a
+            href="https://www.threads.com/@proyecto_deva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Threads (@proyecto_deva)
+          </a>
+          · 𝕏
+          <a
+            href="https://x.com/proyecto_deva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X (@proyecto_deva)
+          </a>
+          · 📘
+          <a
+            href="https://www.facebook.com/ProyectoDeva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook (Deva Elaine)
+          </a>
 
-      <p class="small">
-        📧 <a href="mailto:contacto.proyectodeva@gmail.com">contacto.proyectodeva@gmail.com</a>
-      </p>
-
-      <p class="small">
-        📷
-         <a href="https://www.instagram.com/proyecto_deva/" target="_blank" rel="noopener noreferrer">
-          Instagram (@proyecto_deva)
-        </a>
-        ·
-        🧵
-        <a href="https://www.threads.com/@proyecto_deva" target="_blank" rel="noopener noreferrer">
-          Threads (@proyecto_deva)
-        </a>
-        ·
-        𝕏
-        <a href="https://x.com/proyecto_deva" target="_blank" rel="noopener noreferrer">
-          X (@proyecto_deva)
-        </a>
-        ·
-        📘
-        <a href="https://www.facebook.com/ProyectoDeva" target="_blank" rel="noopener noreferrer">
-          Facebook (Deva Elaine)
-        </a>
-
-         <!--
+          <!--
           ·
           🎵
           <a href="https://www.tiktok.com/@proyecto_deva" target="_blank" rel="noopener noreferrer">
           TikTok (@proyecto_deva)
           </a> -->
-      </p>
-    </div>
-  </footer>
+        </p>
+      </div>
+    </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="chatbot.js"></script>
+  </body>
 </html>

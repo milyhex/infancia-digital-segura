@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
 
-    <meta property="og:title" content="Infancia Digital Segura" />
+    <meta property="og:title" content="Blog | Infancia Digital Segura" />
     <meta
       property="og:description"
       content="Guías claras para familias: señales de alerta, prevención y acompañamiento."
@@ -33,13 +33,14 @@
       name="twitter:image"
       content="https://proyectodeva.com.ar/assets/og.png"
     />
-    <meta name="twitter:title" content="Infancia Digital Segura" />
+    <meta name="twitter:title" content="Blog | Infancia Digital Segura" />
     <meta
       name="twitter:description"
       content="Guías claras para familias: señales de alerta, prevención y acompañamiento."
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css" />
 
     <script
       defer
@@ -49,7 +50,13 @@
   </head>
 
   <body>
-    <a class="deva-float" href="deva.html" aria-label="Conocer a Deva">
+    <!-- Deva flotante -->
+    <a
+      class="deva-float"
+      href="#"
+      onclick="openChatFromFloat(event)"
+      aria-label="Hablar con Deva"
+    >
       <img src="assets/deva-sticker.png" alt="Deva, guardiana del proyecto" />
     </a>
 
@@ -62,54 +69,80 @@
       </div>
 
       <nav class="nav">
-        <a href="/">Inicio</a>
-        <a class="active" href="blog.html">Blog</a>
+        <a class="active" href="/">Inicio</a>
+        <a href="deva.html" class="btn">Deva</a>
         <a href="glosario.html" class="btn">Glosario</a>
       </nav>
     </header>
 
     <main class="container">
-      <section class="card">
-        <h2>Artículos</h2>
-        <ul class="list">
-          <li>
-            <a href="posts/guia-tiktok-para-familias.html">
-              TikTok: Guía para familias
-            </a>
-          </li>
-          <li>
-            <a href="posts/grooming-como-empieza.html">
-              ¿Qué es el grooming y cómo suele empezar?
-            </a>
-          </li>
-          <li>
-            <a href="posts/senales-alerta-juegos-online.html">
-              Señales de alerta en juegos online
-            </a>
-          </li>
-          <li>
-            <a href="posts/adultos-haciendose-pasar-por-ninos.html">
-              Cuando un adulto se hace pasar por niño — un juego que refleja un
-              riesgo real
-            </a>
-          </li>
-          <li>
-            <a href="posts/como-hablar-sin-miedo.html">
-              Cómo hablar del tema sin miedo (guía para padres)
-            </a>
-          </li>
-        </ul>
+      <section class="blog-section">
+        <h2>💜Artículos para acompañar mejor</h2>
+
+        <div class="grid">
+          <a
+            class="card linkcard blog-card"
+            href="posts/guia-tiktok-para-familias.html"
+          >
+            <h3>TikTok: Guía para familias</h3>
+            <p>Cómo acompañar el uso sin prohibir ni perder control.</p>
+            <span class="post-readmore">Leer artículo →</span>
+          </a>
+
+          <a
+            class="card linkcard blog-card"
+            href="posts/grooming-como-empieza.html"
+          >
+            <h3>¿Qué es el grooming y cómo empieza?</h3>
+            <p>Cómo reconocer las primeras señales.</p>
+            <span class="post-readmore">Leer artículo →</span>
+          </a>
+
+          <a
+            class="card linkcard blog-card"
+            href="posts/senales-alerta-juegos-online.html"
+          >
+            <h3>Señales de alerta en juegos online</h3>
+            <p>Qué mirar mientras juegan.</p>
+            <span class="post-readmore">Leer artículo →</span>
+          </a>
+
+          <a
+            class="card linkcard blog-card"
+            href="posts/adultos-haciendose-pasar-por-ninos.html"
+          >
+            <h3>Adultos haciéndose pasar por niños</h3>
+            <p>Un riesgo más común de lo que parece.</p>
+            <span class="post-readmore">Leer artículo →</span>
+          </a>
+
+          <a
+            class="card linkcard blog-card"
+            href="posts/como-hablar-sin-miedo.html"
+          >
+            <h3>Cómo hablar sin miedo</h3>
+            <p>Claves para abrir el diálogo.</p>
+            <span class="post-readmore">Leer artículo →</span>
+          </a>
+        </div>
       </section>
     </main>
 
     <footer class="container footer">
-      <p class="muted small">
-        © <span id="year"></span> Infancia Digital Segura
-      </p>
+      <div>
+        <p class="muted small">
+          © <span id="year"></span> Infancia Digital Segura
+        </p>
+        <p class="muted small">
+          Proyecto educativo independiente. No reemplaza ayuda profesional.
+        </p>
+      </div>
     </footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+    <script src="chatbot.js"></script>
   </body>
 </html>
