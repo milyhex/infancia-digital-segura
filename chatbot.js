@@ -312,7 +312,7 @@ const intents = [
       "ola",
     ],
     response:
-      "Hola 💜 Soy Deva. Contame, ¿qué te está preocupando o qué te gustaría entender mejor?",
+      "Hola 💜. Contame, ¿qué te está preocupando o qué te gustaría entender mejor?",
   },
 
   {
