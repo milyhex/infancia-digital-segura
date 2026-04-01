@@ -15,11 +15,16 @@ const intents = [
     name: "hablar",
     keywords: [
       "hablar",
+      "hablarle",
+      "charlar",
+      "conversar",
       "decir",
       "contar",
       "explicar",
       "como hablo",
       "cómo hablo",
+      "como lo digo",
+      "cómo lo hablo",
       "como le digo",
       "cómo le digo",
       "que le digo",
@@ -28,12 +33,21 @@ const intents = [
       "cómo explico",
       "hijo",
       "hija",
+      "mi hijo",
+      "mi hija",
       "niño",
       "niña",
       "adolescente",
+      "pibe",
+      "piba",
+      "adolecentes",
     ],
     response:
       "Podés empezar con preguntas simples y sin juzgar. Por ejemplo: '¿alguna vez alguien te habló y te hizo sentir incómodo?' o 'si alguien te pide guardar un secreto, ¿sabés que podés contármelo?'. Lo importante es generar confianza 💜",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
   },
   {
     name: "grooming",
@@ -46,13 +60,23 @@ const intents = [
       "adulto",
       "adultos",
       "raro",
+      "finge ser",
+      "fingiendo ser",
+      "se hace pasar",
+      "contacto raro",
       "gente rara",
       "habla con gente",
       "habla con desconocidos",
       "perfil falso",
+      "pedofilo",
+      "pedofilia",
     ],
     response:
       "El grooming suele empezar con alguien que parece amable. Puede escuchar, jugar o generar confianza poco a poco, y después pedir secretos o llevar la conversación a algo incómodo.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
   },
   {
     name: "contenido",
@@ -67,9 +91,19 @@ const intents = [
       "inapropiado",
       "cosas feas",
       "trauma",
+      "contenido inapropiado",
+      "violento",
+      "traumatico",
+      "traumatica",
+      "ve cosas",
+      "vea cosas",
     ],
     response:
       "El contenido inapropiado puede aparecer sin buscarlo. Es importante acompañar, hablar de lo que ven y usar configuraciones de seguridad cuando haga falta.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
   },
   {
     name: "alertas",
@@ -85,10 +119,20 @@ const intents = [
       "secretos",
       "esconde",
       "esconder",
+      "secreto",
+      "oculta",
+      "miedo",
+      "raro",
+      "comportamiento",
     ],
     response:
       "Algunas señales de alerta son: cambios de humor, aislamiento, secretos, miedo al usar el celular o esconder conversaciones.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
   },
+
   {
     name: "controles",
     keywords: [
@@ -103,10 +147,19 @@ const intents = [
       "filtros",
       "youtube kids",
       "control parental",
+      "restriccion",
+      "restricciones",
+      "cuenta privada",
+      "seguridad",
     ],
     response:
-      "Podés usar controles parentales, cuentas privadas, filtros y límites de uso. Eso ayuda, pero sigue siendo importante hablar y acompañar.",
+      "Podés usar controles parentales, filtros, cuentas privadas y límites de uso.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
   },
+
   {
     name: "adiccion",
     keywords: [
@@ -119,9 +172,18 @@ const intents = [
       "ansiedad",
       "sobreestimulacion",
       "sobreestimulación",
+      "pantallas",
+      "estimulo",
+      "estimulación",
+      "uso excesivo",
+      "no suelta el celular",
     ],
     response:
       "El exceso de pantalla también preocupa mucho. Más que prohibir de golpe, suele ayudar poner rutinas claras, límites sostenibles y acompañar el uso.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
   },
   {
     name: "estafas",
@@ -138,12 +200,118 @@ const intents = [
     ],
     response:
       "Las estafas y engaños también son un riesgo. Conviene enseñar a no compartir datos, no tocar links raros y consultar a un adulto antes de comprar o registrarse.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
+  },
+  {
+    name: "ciberbullying",
+    keywords: [
+      "bullying",
+      "ciberbullying",
+      "acoso",
+      "acoso cibernetico",
+      "hostigamiento",
+      "burlas",
+      "humillacion",
+      "amenazas",
+      "molestan",
+      "lo molestan",
+      "la molestan",
+    ],
+    response:
+      "El ciberbullying puede aparecer como burlas, humillaciones, exclusión o amenazas. Es importante mirar cambios de ánimo y sostener un espacio de confianza.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
+  },
+  {
+    name: "estafas",
+    keywords: [
+      "estafa",
+      "estafas",
+      "engano",
+      "enganos",
+      "phishing",
+      "robar",
+      "datos",
+      "datos personales",
+      "link raro",
+      "mensaje raro",
+      "cuenta hackeada",
+      "hackeo",
+      "hackearon",
+    ],
+    response:
+      "Las estafas y engaños también son un riesgo. Conviene enseñar a no compartir datos, no abrir links dudosos y consultar a un adulto antes de hacer clic o registrarse.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
   },
   {
     name: "juegos",
-    keywords: ["juego", "juegos", "roblox", "fortnite", "minecraft", "discord"],
+    keywords: [
+      "juego",
+      "juegos",
+      "roblox",
+      "fortnite",
+      "minecraft",
+      "free fire",
+      "chat de juego",
+      "jugando",
+      "videojuego",
+      "videojuegos",
+      "discord",
+    ],
     response:
       "En juegos online puede haber contacto con desconocidos, chats incómodos o pedidos raros. Vale la pena revisar configuraciones, listas de amigos y cómo se comunican.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
+  },
+  {
+    name: "compras",
+    keywords: [
+      "compras",
+      "compra",
+      "compro",
+      "gastar",
+      "gastos",
+      "tarjeta",
+      "pagar",
+      "pago",
+      "compras dentro del juego",
+      "microtransacciones",
+    ],
+    response:
+      "Las compras dentro de juegos o apps pueden traer riesgos y gastos inesperados. Conviene revisar métodos de pago y limitar compras sin autorización.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
+  },
+  {
+    name: "empezar",
+    keywords: [
+      "no se por donde empezar",
+      "no se que hacer",
+      "por donde empiezo",
+      "estoy perdida",
+      "estoy perdido",
+      "no entiendo nada",
+      "me siento perdida",
+      "me siento perdido",
+    ],
+    response:
+      "Es normal no saber por dónde empezar 💜 Podemos ir paso a paso: riesgos más comunes, señales de alerta o cómo hablar del tema.",
+    article: {
+      label: "Si queres saber mas: Ver guía para familias",
+      url: "blog.html",
+    },
   },
 ];
 
@@ -308,7 +476,20 @@ window.sendMessage = function () {
 
   const botMsg = document.createElement("div");
   botMsg.className = "bot-msg";
-  botMsg.innerText = response;
+
+  const botText = document.createElement("div");
+  botText.className = "bot-msg-text";
+  botText.innerText = response;
+  botMsg.appendChild(botText);
+
+  if (intent && intent.article) {
+    const articleLink = document.createElement("a");
+    articleLink.className = "chat-article-link";
+    articleLink.href = intent.article.url;
+    articleLink.innerText = intent.article.label;
+    botMsg.appendChild(articleLink);
+  }
+
   chat.appendChild(botMsg);
 
   chat.scrollTop = chat.scrollHeight;
