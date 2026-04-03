@@ -507,13 +507,11 @@ window.sendMessage = function () {
   input.value = "";
 
   const intent = detectIntent(text);
-  console.log("Intent detectado:", intent);
 
   let response = "";
 
   if (intent) {
     response = intent.response;
-    console.log("ANTES de logEvent intent");
 
     logEvent({
       type: "intent_detected",
@@ -525,8 +523,6 @@ window.sendMessage = function () {
   } else {
     response =
       "Perdón 💜 creo que no entendí bien. ¿Podés explicármelo de otra forma? O si preferís, podés escribirme por mail.";
-
-    console.log("ANTES de logEvent unresolved");
 
     logEvent({
       type: "unresolved_message",
@@ -570,11 +566,6 @@ window.sendMessage = function () {
 };
 
 async function logEvent(event) {
-  console.log("Entró a logEvent", event);
-  console.log("window.db:", window.db);
-  console.log("window.addDoc:", window.addDoc);
-  console.log("window.collection:", window.collection);
-
   try {
     const docRef = await window.addDoc(
       window.collection(window.db, "chat_events"),
