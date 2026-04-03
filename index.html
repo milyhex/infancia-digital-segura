@@ -243,6 +243,33 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+    <script src="chatbot.js"></script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+      import {
+        getFirestore,
+        addDoc,
+        collection,
+      } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSy...",
+        authDomain: "proyecto-deva.firebaseapp.com",
+        projectId: "proyecto-deva",
+        storageBucket: "proyecto-deva.firebasestorage.app",
+        messagingSenderId: "1013673989451",
+        appId: "1:1013673989451:web:83059601a7bc2072ca04ce",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      window.db = db;
+      window.addDoc = addDoc;
+      window.collection = collection;
+    </script>
     <script src="chatbot.js"></script>
   </body>
 </html>

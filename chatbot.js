@@ -331,7 +331,8 @@ const intents = [
   {
     name: "despedida",
     keywords: ["chau", "adios", "nos vemos", "bye"],
-    response: "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar, No hace falta tener todo resuelto hoy. ",
+    response:
+      "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar, No hace falta tener todo resuelto hoy. "
   },
   {
     name: "proyecto",
@@ -493,12 +494,14 @@ window.sendMessage = function () {
   const text = input.value.toLowerCase().trim();
   if (!text) return;
 
+  const originalText = input.value; // guardamos el texto real antes de vaciar el input
+
   const chat = document.getElementById("chatMessages");
 
   // mensaje usuario
   const userMsg = document.createElement("div");
   userMsg.className = "user-msg";
-  userMsg.innerText = input.value;
+  userMsg.innerText = originalText;
   chat.appendChild(userMsg);
 
   input.value = "";
@@ -509,10 +512,26 @@ window.sendMessage = function () {
 
   if (intent) {
     response = intent.response;
+
+    logEvent({
+      type: "intent_detected",
+      text: originalText,
+      intent: intent.name,
+      resolved: true,
+      page: window.location.pathname
+    });
   } else {
     response =
       "Perdón 💜 creo que no entendí bien. ¿Podés explicármelo de otra forma? O si preferís, podés escribirme por mail.";
-  }
+
+    logEvent({
+      type: "unresolved_message",
+      text: originalText,
+      intent: null,
+      resolved: false,
+      page: window.location.pathname
+    });
+  } 
 
   const botMsg = document.createElement("div");
   botMsg.className = "bot-msg";
@@ -547,6 +566,17 @@ window.sendMessage = function () {
 
   chat.scrollTop = chat.scrollHeight;
 };
+
+async function logEvent(event) {
+  try {
+    await addDoc(collection(db, "chat_events"), {
+      ...event,
+      createdAt: new Date().toISOString(),
+    });
+  } catch (e) {
+    console.error("Error guardando evento", e);
+  }
+}
 
 function detectIntent(text) {
   let bestIntent = null;
