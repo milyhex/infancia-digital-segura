@@ -507,6 +507,7 @@ window.sendMessage = function () {
   input.value = "";
 
   const intent = detectIntent(text);
+  console.log("Intent detectado:", intent);
 
   let response = "";
 
@@ -531,7 +532,7 @@ window.sendMessage = function () {
       resolved: false,
       page: window.location.pathname
     });
-  } 
+  }
 
   const botMsg = document.createElement("div");
   botMsg.className = "bot-msg";
@@ -569,7 +570,7 @@ window.sendMessage = function () {
 
 async function logEvent(event) {
   try {
-    await addDoc(collection(db, "chat_events"), {
+    await window.addDoc(window.collection(window.db, "chat_events"), {
       ...event,
       createdAt: new Date().toISOString(),
     });
