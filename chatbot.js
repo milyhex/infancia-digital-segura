@@ -513,6 +513,7 @@ window.sendMessage = function () {
 
   if (intent) {
     response = intent.response;
+    console.log("ANTES de logEvent intent");
 
     logEvent({
       type: "intent_detected",
@@ -524,6 +525,8 @@ window.sendMessage = function () {
   } else {
     response =
       "Perdón 💜 creo que no entendí bien. ¿Podés explicármelo de otra forma? O si preferís, podés escribirme por mail.";
+
+    console.log("ANTES de logEvent unresolved");
 
     logEvent({
       type: "unresolved_message",
@@ -552,7 +555,6 @@ window.sendMessage = function () {
     botMsg.appendChild(articleLink);
   }
 
-  // 👉 fallback mail
   if (!intent) {
     const mailLink = document.createElement("a");
     mailLink.className = "chat-mail-link";
@@ -564,7 +566,6 @@ window.sendMessage = function () {
   }
 
   chat.appendChild(botMsg);
-
   chat.scrollTop = chat.scrollHeight;
 };
 
