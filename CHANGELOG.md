@@ -4,7 +4,7 @@
 
 ### Agregado
 
-- 
+- Initialize Firebase in index.html and expose db helpers; update chatbot.js to capture the original user text, use it for display, and log intent events to Firestore. Added async logEvent helper that writes intent_detected and unresolved_message documents (with createdAt and page)
 
 ---
 

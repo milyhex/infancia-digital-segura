@@ -502,7 +502,6 @@ window.sendMessage = function () {
   const userMsg = document.createElement("div");
   userMsg.className = "user-msg";
   userMsg.innerText = originalText;
-  userMsg.innerText = input.value;
   chat.appendChild(userMsg);
 
   input.value = "";
