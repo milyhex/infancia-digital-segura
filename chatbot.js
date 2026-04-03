@@ -571,6 +571,7 @@ async function logEvent(event) {
       window.collection(window.db, "chat_events"),
       {
         ...event,
+        sessionId: getSessionId(),
         createdAt: new Date().toISOString(),
       },
     );
@@ -601,4 +602,15 @@ function detectIntent(text) {
   }
 
   return bestIntent;
+}
+
+function getSessionId() {
+  let sessionId = localStorage.getItem("chat_id");
+
+  if (!sessionId) {
+    sessionId = "session_" + Math.random().toString(36).substring(2, 10);
+    localStorage.setItem("chat_id", sessionId);
+  }
+
+  return sessionId;
 }
