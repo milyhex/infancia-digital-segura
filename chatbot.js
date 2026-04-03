@@ -332,7 +332,7 @@ const intents = [
     name: "despedida",
     keywords: ["chau", "adios", "nos vemos", "bye"],
     response:
-      "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar, No hace falta tener todo resuelto hoy. "
+      "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar, No hace falta tener todo resuelto hoy. ",
   },
   {
     name: "proyecto",
@@ -519,7 +519,7 @@ window.sendMessage = function () {
       text: originalText,
       intent: intent.name,
       resolved: true,
-      page: window.location.pathname
+      page: window.location.pathname,
     });
   } else {
     response =
@@ -530,7 +530,7 @@ window.sendMessage = function () {
       text: originalText,
       intent: null,
       resolved: false,
-      page: window.location.pathname
+      page: window.location.pathname,
     });
   }
 
@@ -569,11 +569,21 @@ window.sendMessage = function () {
 };
 
 async function logEvent(event) {
+  console.log("Entró a logEvent", event);
+  console.log("window.db:", window.db);
+  console.log("window.addDoc:", window.addDoc);
+  console.log("window.collection:", window.collection);
+
   try {
-    await window.addDoc(window.collection(window.db, "chat_events"), {
-      ...event,
-      createdAt: new Date().toISOString(),
-    });
+    const docRef = await window.addDoc(
+      window.collection(window.db, "chat_events"),
+      {
+        ...event,
+        createdAt: new Date().toISOString(),
+      },
+    );
+
+    console.log("Guardado OK, id:", docRef.id);
   } catch (e) {
     console.error("Error guardando evento", e);
   }
