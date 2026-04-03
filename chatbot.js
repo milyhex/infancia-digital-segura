@@ -332,7 +332,7 @@ const intents = [
     name: "despedida",
     keywords: ["chau", "adios", "nos vemos", "bye"],
     response:
-      "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar, No hace falta tener todo resuelto hoy. ",
+      "💜 Yo voy a seguir acá… cuando quieras volvemos a hablar, No hace falta tener todo resuelto hoy. "
   },
   {
     name: "proyecto",
@@ -502,6 +502,7 @@ window.sendMessage = function () {
   const userMsg = document.createElement("div");
   userMsg.className = "user-msg";
   userMsg.innerText = originalText;
+  userMsg.innerText = input.value;
   chat.appendChild(userMsg);
 
   input.value = "";
@@ -531,7 +532,7 @@ window.sendMessage = function () {
       resolved: false,
       page: window.location.pathname
     });
-  }
+  } 
 
   const botMsg = document.createElement("div");
   botMsg.className = "bot-msg";
